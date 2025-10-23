@@ -1,0 +1,36 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+game_board                                                                        0x0571      18
+_base_y                                                                           0x0583       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+player_turn                                                                       R4,R5        2
+is_started                                                                        R7           1
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+check_win                                                                         0x000CC    116
+is_draw                                                                           0x00140     19
+work                                                                              0x00153     88
+keyboard                                                                          0x001AB     57
+get_bit1_value                                                                    0x001E4     19
+get_bit2_value                                                                    0x001F7     19
+main                                                                              0x0020A    183
+_lcd_write_nibble_G100                                                            0x002C1     20
+_lcd_write_data                                                                   0x002D5     12
+lcd_gotoxy                                                                        0x002E1     13
+lcd_clear                                                                         0x002EE     12
+lcd_putchar                                                                       0x002FA     21
+lcd_puts                                                                          0x0030F     17
+lcd_init                                                                          0x00320     45
